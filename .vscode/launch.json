@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug PR1",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/PR1.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/University/CIC++/mingw64/bin/gdb.exe",
+            "preLaunchTask": "build PR1"
+        }
+    ]
+}

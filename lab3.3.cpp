@@ -19,19 +19,19 @@ int main()
     cout << "x = "; cin  >> x; 
      
     // розгалуження в повній формі 
-    if (x<=-2*R) 
+    if (x < -6) 
         y = R; 
     else 
-        if (-2*R<x && x<=0) 
-            y = -1./2.*x; 
+        if (-6 <= x && x <= 0) 
+            y = -1./6. * R * x; 
         else 
-            if (0<x && x<=R) 
+            if (0 <= x && x <= R) 
                 y = R - sqrt(R*R - x*x); 
             else 
-                if (R<x && x<=2*R) 
-                    y = sqrt(R*R - (x-R)*(x-R)); 
+                if (R <= x && x <= 1 + R) 
+                    y = R + sqrt(R*R - (x-R)*(x-R)); 
                 else 
-                    y = -(x - 2*R)/(6 - 2*R); 
+                    y = -1./2. * (x - (1 + R)); 
  
     cout << endl; 
     cout << "y = " << y << endl; 
